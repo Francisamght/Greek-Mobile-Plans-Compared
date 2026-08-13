@@ -1,0 +1,65 @@
+:root{
+/* ---- base: paper ---- */
+--paper-0:#FFFDF7;--paper-1:#FAF6EC;--paper-2:#F1EBDD;--paper-3:#E4DCC9;
+/* ---- base: ink ---- */
+--ink-0:#0B0B0C;--ink-1:#191A1C;--ink-2:#3A3C40;--ink-3:#6B6E74;--ink-4:#9A9DA4;--ink-5:#C9CBD0;
+/* ---- base: blueprint (IBM Systems Journal 1979 navy) ---- */
+--blueprint-0:#060E4A;--blueprint-1:#0E1F8C;--blueprint-2:#1B2EC4;--blueprint-3:#5567E0;--blueprint-4:#B9C0F2;--blueprint-5:#E6E8FB;
+/* ---- base: signal (accent) ---- */
+--signal-0:#B93109;--signal-1:#EF4A16;--signal-2:#FF6A3D;--signal-3:#FFB79E;--signal-4:#FFE7DE;
+/* ---- base: semantic hues ---- */
+--go-0:#0F5132;--go-1:#12784A;--go-2:#C9E8D6;
+--warn-0:#7A4A00;--warn-1:#C07A05;--warn-2:#FBE7BE;
+--stop-0:#7A0F16;--stop-1:#C1121F;--stop-2:#F8D6D8;
+
+/* ---- semantic: surface ---- */
+--surface-page:var(--paper-1);
+--surface-card:var(--paper-0);
+--surface-sunken:var(--paper-2);
+--surface-inset:var(--paper-3);
+--surface-inverse:var(--ink-0);
+--surface-blueprint:var(--blueprint-1);
+--surface-blueprint-deep:var(--blueprint-0);
+--surface-accent:var(--signal-1);
+--surface-accent-soft:var(--signal-4);
+
+/* ---- semantic: text ---- */
+--text-body:var(--ink-1);
+--text-strong:var(--ink-0);
+--text-muted:var(--ink-3);
+--text-faint:var(--ink-4);
+--text-on-dark:var(--paper-0);
+--text-on-blueprint:#FFFFFF;
+--text-on-accent:#FFFFFF;
+--text-accent:var(--signal-0);
+--text-link:var(--blueprint-2);
+--text-link-hover:var(--signal-0);
+
+/* ---- semantic: line (hairline system) ---- */
+--line-hair:rgba(11,11,12,.16);
+--line-rule:rgba(11,11,12,.30);
+--line-strong:var(--ink-0);
+--line-accent:var(--signal-1);
+--line-blueprint:rgba(14,31,140,.35);
+--line-on-dark:rgba(255,255,255,.30);
+--line-grid:rgba(11,11,12,.07);
+
+/* ---- semantic: status ---- */
+--status-go-fg:var(--go-0);--status-go-bg:var(--go-2);--status-go-dot:var(--go-1);
+--status-warn-fg:var(--warn-0);--status-warn-bg:var(--warn-2);--status-warn-dot:var(--warn-1);
+--status-stop-fg:var(--stop-0);--status-stop-bg:var(--stop-2);--status-stop-dot:var(--stop-1);
+
+/* ---- semantic: focus ---- */
+--focus-ring:var(--signal-1);
+}
+
+/* Blueprint scope: invert the paper system for full-bleed diagram panels.
+   Apply to any container with [data-scheme="blueprint"]. */
+[data-scheme="blueprint"]{
+--surface-page:var(--blueprint-1);--surface-card:var(--blueprint-0);--surface-sunken:var(--blueprint-0);
+--surface-inset:rgba(255,255,255,.06);--surface-inverse:var(--paper-0);
+--text-body:#FFFFFF;--text-strong:#FFFFFF;--text-muted:var(--blueprint-4);--text-faint:var(--blueprint-3);
+--text-link:#FFFFFF;--text-link-hover:var(--signal-2);--text-accent:var(--signal-2);
+--line-hair:rgba(255,255,255,.22);--line-rule:rgba(255,255,255,.38);--line-strong:#FFFFFF;
+--line-grid:rgba(255,255,255,.10);--focus-ring:var(--signal-2);
+}

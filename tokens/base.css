@@ -1,0 +1,9 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:var(--text-link);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px;transition:var(--transition-control)}
+a:hover{color:var(--text-link-hover)}
+::selection{background:var(--signal-3);color:var(--ink-0)}
+:focus-visible{outline:1.5px solid var(--focus-ring);outline-offset:2px}
+hr{border:0;border-top:var(--border-hair);margin:var(--space-24) 0}
+/* graph-paper backdrop utility used across the brand */
+.sima-graph{background-image:linear-gradient(var(--line-grid) 1px,transparent 1px),linear-gradient(90deg,var(--line-grid) 1px,transparent 1px);background-size:var(--grid-unit) var(--grid-unit)}

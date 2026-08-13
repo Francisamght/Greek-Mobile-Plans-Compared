@@ -1,0 +1,13 @@
+:root{
+/* Almost no soft shadow. Depth reads as offset registration blocks and
+   inset hairlines — like mis-registered print. */
+--shadow-none:none;
+--shadow-offset:3px 3px 0 0 var(--ink-0);
+--shadow-offset-accent:3px 3px 0 0 var(--signal-1);
+--shadow-offset-blueprint:3px 3px 0 0 var(--blueprint-1);
+--shadow-lift:0 1px 0 0 rgba(11,11,12,.18);
+--shadow-panel:0 12px 32px -18px rgba(6,14,74,.35);
+--shadow-inset-hair:inset 0 0 0 1px var(--line-hair);
+--overlay-scrim:rgba(6,14,74,.55);
+--blur-panel:blur(3px); /* @kind other */
+}
